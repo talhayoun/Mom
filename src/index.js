@@ -9,6 +9,7 @@ require("./db/mongoose");
 const userRouter = require("../src/routers/userRouter");
 const mealRouter = require("../src/routers/mealsRouter");
 
+app.get("/", (req, res) => { res.send("ok") })
 app.use(cors());
 app.use(express.json())
 
